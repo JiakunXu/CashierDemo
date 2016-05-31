@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weizhi.arrow.cashierdemo.activity.ZxingReceiverActivity">
+
+    <TextView
+        android:id="@+id/tv_zxing_receiver_back"
+        android:layout_width="75px"
+        android:layout_height="75px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:background="@mipmap/zxing_pay_back" />
+
+    <TextView
+        android:id="@+id/tv_zxing_receiver_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260px"
+        android:text="323213"
+        android:textColor="@color/input_cash_view"
+        android:textSize="60px" />
+
+    <TextView
+        android:id="@+id/tv_zxing_receiver_position"
+        android:layout_width="550px"
+        android:layout_height="550px"
+        android:layout_below="@+id/tv_zxing_receiver_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:background="@mipmap/tv_zxing_receiver_position" />
+
+    <TextView
+        android:id="@+id/tv_zxing_receiver_gopay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_zxing_receiver_position"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:text="@string/zxingpay_receiver_gopay"
+        android:textColor="@color/text_zxing_pay_receiver"
+        android:textSize="36px" />
+</RelativeLayout>

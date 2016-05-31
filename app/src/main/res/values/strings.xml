@@ -15,5 +15,8 @@
     <string name="nine">9</string>
     <string name="zero">0</string>
     <string name="point">·</string>
+    <string name="zxingpay_bar_code">扫描不上?</string>
+    <string name="zxingpay_receiver">收款二维码</string>
+    <string name="zxingpay_receiver_gopay">扫描顾客的二维码</string>
 
 </resources>

@@ -8,4 +8,6 @@
     <color name="input_cash_view">#333333</color>
     <color name="input_cash_normal">#ffffff</color>
     <color name="input_cash_press">#dddddd</color>
+    <color name="text_zxing_pay_barcode">#999999</color>
+    <color name="text_zxing_pay_receiver">#55b2cd</color>
 </resources>

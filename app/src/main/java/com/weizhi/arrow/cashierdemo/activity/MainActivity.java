@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.text.style.AbsoluteSizeSpan;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.weizhi.arrow.cashierdemo.R;
 import com.weizhi.arrow.cashierdemo.base.BaseActivity;
@@ -47,8 +49,6 @@ public class MainActivity extends BaseActivity implements View.OnLongClickListen
         ll_zxing_pay = (LinearLayout) findViewById(R.id.include_bottom).findViewById(R.id.ll_zxing_pay);
         ll_member_consume = (LinearLayout) findViewById(R.id.include_bottom).findViewById(R.id.ll_member_consume);
         ll_more = (LinearLayout) findViewById(R.id.include_bottom).findViewById(R.id.ll_more);
-        ll_cashier.setSelected(true);
-
         tv_one = (TextView) findViewById(R.id.fl_content).findViewById(R.id.tv_input_one);
         tv_two = (TextView) findViewById(R.id.fl_content).findViewById(R.id.tv_input_two);
         tv_three = (TextView) findViewById(R.id.fl_content).findViewById(R.id.tv_input_three);
@@ -98,7 +98,12 @@ public class MainActivity extends BaseActivity implements View.OnLongClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ll_zxing_pay:
-
+                if (!TextUtils.isEmpty(tv_input_num.getText().toString())) {
+                    ZxingPayActivity.launch(MainActivity.this, tv_input_num.getText().toString());
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                }else{
+                    Toast.makeText(MainActivity.this, "请输入金额", Toast.LENGTH_SHORT).show();
+                }
                 break;
             case R.id.ll_member_consume:
 
