@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_input_num"
+        android:background="@color/input_cash_view">
+
+        <TextView
+            android:id="@+id/tv_input_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="40px"
+            android:layout_marginRight="30px"
+            android:text="e3e131"
+            android:textColor="@color/input_cash_normal"
+            android:textSize="108px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_input_num"
+        android:layout_width="match_parent"
+        android:layout_height="684px"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_num_lineone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cashier_position" />
+
+        <include layout="@layout/layout_num_linetwo" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cashier_position" />
+
+        <include layout="@layout/layout_num_linethree" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/cashier_position" />
+
+        <include layout="@layout/layout_num_linefour" />
+    </LinearLayout>
+
+</RelativeLayout>

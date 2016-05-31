@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="171px"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_input_point"
+        android:layout_width="240px"
+        android:layout_height="171px"
+        android:layout_weight="1"
+        android:background="@drawable/select_tv_num"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/point"
+        android:textColor="@color/input_cash_view"
+        android:textSize="84px" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/cashier_position" />
+
+    <TextView
+        android:id="@+id/tv_input_zero"
+        android:layout_width="240px"
+        android:layout_height="171px"
+        android:layout_weight="1"
+        android:background="@drawable/select_tv_num"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/zero"
+        android:textColor="@color/input_cash_view"
+        android:textSize="84px" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/cashier_position" />
+
+    <LinearLayout
+        android:id="@+id/ll_input_del"
+        android:layout_width="240px"
+        android:layout_height="171px"
+        android:layout_weight="1"
+        android:background="@drawable/select_iv_num"
+        android:clickable="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="64px"
+            android:layout_height="44px"
+            android:src="@mipmap/iv_num_bc" />
+    </LinearLayout>
+
+
+</LinearLayout>
