@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.weizhi.arrow.cashierdemo.R;
 import com.weizhi.arrow.cashierdemo.base.BaseActivity;
 
-public class MainActivity extends BaseActivity implements View.OnLongClickListener{
+public class MainActivity extends BaseActivity implements View.OnLongClickListener {
 
     private TextView tv_one;
     private TextView tv_two;
@@ -97,62 +97,71 @@ public class MainActivity extends BaseActivity implements View.OnLongClickListen
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.ll_zxing_pay:
+
+                break;
+            case R.id.ll_member_consume:
+
+                break;
+            case R.id.ll_more:
+
+                break;
             case R.id.tv_input_one:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("1");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_two:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("2");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_three:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("3");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_four:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("4");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_five:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("5");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_six:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("6");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_seven:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("7");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_eight:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("8");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_nine:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("9");
                     setTextView(buffer.toString());
                 }
                 break;
             case R.id.tv_input_zero:
-                if(buffer.length()<7){
+                if (buffer.length() < 7) {
                     buffer.append("0");
                     setTextView(buffer.toString());
                 }
